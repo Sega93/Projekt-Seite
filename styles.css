@@ -1,0 +1,138 @@
+body {
+  font-family: 'Fira Code', monospace;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ecf0f1; 
+}
+
+header {
+  background-color: #F9A03F; 
+  color: black;
+  text-align: center;
+  padding: 1em 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 20px;
+  background-color: #d8ffffc7;
+  border-radius: 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#projectScroll {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectTile {
+  position: relative;
+  width: 500px;
+  height: 42vh;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1.3s;
+}
+@keyframes fadeIn {
+  from {opacity: 0.1}
+  to {opacity: 1}
+}
+
+.fadeInArrows {
+  animation-name: fadeInArrows;
+  animation-duration: 0.2s;
+}
+@keyframes fadeInArrows {
+  from {opacity: 0.1}
+  to {opacity: 0.8}
+}
+
+i {
+  transition-duration: 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+i:hover {
+  transform: scale(1.5);
+}
+
+.description {
+  position: absolute;
+  padding: 1rem 0 1rem;
+  display: none;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+}
+
+.projectTile:hover > .description {
+  display: block;
+}
+
+.out {
+  color:#F9A03F;
+  font-weight:600;
+  display: none;
+}
+
+.description:hover > .out {
+  display: inline-block;
+}
+
+
+.dotCounter {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  background-color: black;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #F9A03F; 
+  color: black;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.active, .dot:hover {
+  background-color: #F9A03F;
+}
+

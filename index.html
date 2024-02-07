@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Projekt-Seite</h1>
+    </header>
+
+    <section id="welcome-section">
+        <h1>Hallo!</h1>
+        <p>Ich heiße Sebastian und möchte das Programmieren zu meinem Beruf machen.</p>
+        <p>Auf dieser Seite findet ihr ein paar meiner bisherigen kleinen Projekte mit Verlinkung zum jeweiligen Github-Repository.</p>
+        <p>Der Link befindet sich in der Bildbeschreibung.</p>
+    </section>
+
+    <div id="projectScroll">
+        <i class="material-icons" onclick="plusSlides(-1)" style="font-size:90px" id="left">navigate_before</i>
+
+        <div class="projectTile fadeIn">
+            <img src="https://i.imgur.com/CisazMy.png">
+            <a href="https://github.com/Sega93/Cool-Birds.git" target="_blank" class="description fadeInArrows"><span class="arrows out"><</span> List of Cool Birds <span class="arrows out">/></span>
+            </a>
+        </div>
+        <div class="projectTile fadeIn">
+            <img src="https://i.imgur.com/w6DjSxu.png">
+            <a href="https://github.com/Sega93/Landing-Page-Example.git" target="_blank" class="description fadeInArrows"><span class="arrows out"><</span> Landing Page Prototype <span class="arrows out">/></span>
+            </a>
+        </div>
+        <div class="projectTile fadeIn">
+            <img src="https://i.imgur.com/iXwX1vN.png">
+            <a href="https://github.com/Sega93/mini-RPG-freecodecamp-Kurs-.git" target="_blank" class="description fadeInArrows"><span class="arrows out"><</span> miniRPG (freeCodeCamp-Kurs) <span class="arrows out">/></span>
+            </a>
+        </div>
+        <div class="projectTile fadeIn">
+            <img src="https://i.imgur.com/PnPyTjc.png">
+            <span class="description fadeInArrows"><span class="arrows out"><</span><a href="Placeholder" target="_blank"> Code dieser Projekt-Seite! </a><span class="arrows out">/></span></span>
+        </div>
+        
+        <i class="material-icons" onclick="plusSlides(1)" style="font-size:90px" id="right">navigate_next</i>
+    </div>
+    
+    <div class="dotCounter">
+        <p class="dot" onclick="currentSlide(1)"></p>
+        <p class="dot" onclick="currentSlide(2)"></p>
+        <p class="dot" onclick="currentSlide(3)"></p>
+        <p class="dot" onclick="currentSlide(4)"></p>
+    </div>
+
+    <section>
+        <h2>Kontakt</h2>
+        <p>Email: sebastian.gabei93@gmail.com</p>
+    </section>
+
+    <footer>
+        2024, Sebastian || Conertplatz 8, 01159 Dresden
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
