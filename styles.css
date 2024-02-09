@@ -81,7 +81,6 @@ i:hover {
 .description {
   position: absolute;
   padding: 1rem 0 1rem;
-  display: none;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -91,9 +90,6 @@ i:hover {
   cursor: pointer;
 }
 
-.projectTile:hover > .description {
-  display: block;
-}
 
 .out {
   color:#F9A03F;
